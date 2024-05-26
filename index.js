@@ -12,7 +12,7 @@ const PORT=process.env.PORT
 const cors= require("cors")
 // const app= express()
 app.use(cors({
-    origin:["http://localhost:5173"],
+    origin:["http://localhost:5173","https://chat-app886.netlify.app"],
     credentials:true,
     methods: ["GET", "POST","PATCH"],
 }))
