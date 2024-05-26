@@ -12,9 +12,11 @@ const messageSchema = mongoose.Schema({
         required: true
     },
     message: {
-        type: String,
-        required: true
-    }
+        type: String
+    }, 
+    name: String, 
+    id: String ,
+    messageType:String
 }, { timestamps: true });
 
 const MessageModel = mongoose.model("Message", messageSchema);
